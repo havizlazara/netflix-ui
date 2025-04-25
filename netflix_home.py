@@ -7,7 +7,7 @@ movies = {
 }
 poster_urls = {
     "The Witcher": "https://raw.githubusercontent.com/havizlazara/netflix-ui/main/The%20Witcher_%20Storm%27s%20Embrace.png"
-    "Squid Game" : "https://raw.githubusercontent.com/havizlazara/netflix-ui/main/Squid%20Game%20Poster%20with%20Two%20Girls.png"
+    "Squid Game": "https://raw.githubusercontent.com/havizlazara/netflix-ui/main/Squid%20Game%20Poster%20with%20Two%20Girls.png"
 }
 
 st.set_page_config(page_title="Netflix UI", layout="wide")
