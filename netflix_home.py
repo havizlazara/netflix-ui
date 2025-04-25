@@ -5,6 +5,9 @@ movies = {
     "Popular on Netflix": ["You", "Lupin", "Dark", "Bridgerton", "Narcos"],
     "New Releases": ["Atlas", "Rebel Moon", "Heart of Stone", "Lift", "Beef"]
 }
+poster_urls = {
+    "The Witcher": "https://raw.githubusercontent.com/havizlazara/netflix-ui/main/The Witcher_ Storm's Embrace.png",
+}
 
 st.set_page_config(page_title="Netflix UI", layout="wide")
 st.markdown("<h1 style='color: red; font-size: 50px;'>NETFLIX</h1>", unsafe_allow_html=True)
@@ -15,7 +18,9 @@ for category, titles in movies.items():
     cols = st.columns(len(titles))
     for i, title in enumerate(titles):
         with cols[i]:
-            st.image("https://via.placeholder.com/150x220?text=" + title.replace(" ", "+"), caption=title)
+            img_url = poster_urls.get(title, "https://via.placeholder.com/150x220")
+            st.image(img_url, caption=title)
+            
 
 st.markdown("---")
 st.markdown("Made with ❤️ using Streamlit")
