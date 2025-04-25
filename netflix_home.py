@@ -6,7 +6,7 @@ movies = {
     "New Releases": ["Atlas", "Rebel Moon", "Heart of Stone", "Lift", "Beef"]
 }
 poster_urls = {
-    "The Witcher": "https://raw.githubusercontent.com/havizlazara/netflix-ui/main/The Witcher_ Storm's Embrace.png",
+    "The Witcher": "https://raw.githubusercontent.com/havizlazara/netflix-ui/main/https://github.com/havizlazara/netflix-ui/blob/main/The%20Witcher_%20Storm's%20Embrace.png?raw=true",
 }
 
 st.set_page_config(page_title="Netflix UI", layout="wide")
