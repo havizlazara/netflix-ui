@@ -12,11 +12,7 @@ poster_urls = {
 st.set_page_config(page_title="Netflix UI", layout="wide")
 st.markdown("<h1 style='color: red; font-size: 50px;'>NETFLIX</h1>", unsafe_allow_html=True)
 st.markdown("### Welcome back, user123 👋 What do you want to watch today?")
-st.set_page_config(page_title="Netflix UI", layout="wide")
-st.title("🎬 Netflix Mini UI")
 
-st.markdown("### Trending Now")
-st.image(poster_urls["The Witcher"], caption="The Witcher", width=250)
 
 for category, titles in movies.items():
     st.markdown(f"### {category}")
